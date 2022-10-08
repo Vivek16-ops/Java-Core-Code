@@ -1,0 +1,15 @@
+import java.awt.*;
+import java.applet.*;
+public class PolygonDraw1 extends Applet
+{
+  int x[]={40,49,60,70,57,40,35};
+  int y[]={260,310,315,280,260,270,265};
+   public void paint(Graphics g)
+   {
+    g.setColor(Color.black);
+    g.drawPolygon(x,y,6);
+    g.setColor(Color.white);
+    g.fillPolygon(x,y,6);
+    //g.drawPolygon(xpoint,ypoint,num);
+    }
+}

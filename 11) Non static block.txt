@@ -1,0 +1,17 @@
+/* The block which is not ststic are callled non static block .. It is executed when the onject of that class is created */
+class abc
+{
+    {
+        System.out.println("Happy REPUBLIC DAY"); //This is called first because this is created first 
+    }
+
+    public static void main(String[] args) {
+        abc ob = new abc();// here object is created so here first non static block is called 
+        System.out.println("MERA BHARAT MAHAN");
+    }
+   
+   {
+    System.out.println("JAI MATA DI"); // This is called second because this is created second
+   }
+   
+}

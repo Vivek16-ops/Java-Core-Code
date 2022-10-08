@@ -1,0 +1,23 @@
+//Creating Reference and return the value by user input readLine..
+import java.io.*;
+
+class abc {
+    int a;
+}
+
+class xyz {
+    public static void main(String[] args) throws IOException {
+        xyz ob = new xyz();
+        abc p = ob.show();
+        System.out.println("The Value of A is " + p.a);
+
+    }
+
+    abc show() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        abc ob = new abc();
+        System.out.println("Enter The Value Of A");
+        ob.a = Integer.parseInt(br.readLine());
+        return ob;
+    }
+}

@@ -1,0 +1,42 @@
+class X
+{
+    X()//Lastly the control comes here 
+    {
+        System.out.println("X Construcotr");
+    }
+
+    void show()
+    {
+        System.out.println("Hello Java");
+    }
+    
+}
+class Y extends X
+{
+    Y()//After that control is in this contructor 
+    {
+        System.out.println("Y Constructor");
+    }
+    void fun()
+    {
+        System.out.println("C++");
+    }
+}
+class Z extends Y
+{
+    Z()//First control goes to this contructor 
+    {
+        System.out.println("Z Constructor");
+    }
+}
+class abc 
+{
+    public static void main(String[] args) {
+        Z ob = new Z();
+        ob.show();
+        ob.fun();
+    }
+}
+
+
+

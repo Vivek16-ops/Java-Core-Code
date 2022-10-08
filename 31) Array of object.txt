@@ -1,0 +1,20 @@
+// Creating Array of Object 
+class abc {
+    int x;
+
+    public static void main(String[] args) {
+
+        abc ob[] = new abc[3];
+        ob[0] = new abc();
+        ob[0].x = 1;
+        ob[1] = new abc();
+        ob[1].x = 2;
+        ob[2] = new abc();
+        ob[2].x = 3;
+
+        System.out.println(ob[0].x);
+        System.out.println(ob[1].x);
+        System.out.println(ob[2].x);
+
+    }
+}

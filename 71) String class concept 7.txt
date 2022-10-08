@@ -1,0 +1,25 @@
+
+package com.mycompany.nextstepprogrmming;
+
+
+public class String7 {
+    int x;
+    public static void main(String[] args) {
+        String7 ob1 = new String7();
+        ob1.x=9;
+        String7 ob2 = new String7();
+        ob2.x=9;
+        if (ob1.equals(ob2))//Here It compares the addrress of the objects
+        {
+            System.out.println("Hello");
+        }else{
+            System.out.println("Hiiii");
+        }
+        if(ob1==ob2)//This alos comapres the address of the object
+        {
+            System.out.println("Both are same");
+        }else{
+            System.out.println("Both are not same");
+        }
+    }
+}

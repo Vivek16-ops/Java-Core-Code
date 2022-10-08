@@ -1,0 +1,10 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String3 {
+
+    public static void main(String[] args) {
+        char a1[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
+        String ob2 = new String(a1, 0, 4); //It takes the value start from 0 position and takes almot 4 value form that position
+        System.out.println(ob2);
+    }
+}

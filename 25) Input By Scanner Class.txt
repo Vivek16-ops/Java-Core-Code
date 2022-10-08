@@ -1,0 +1,26 @@
+//creating a program and taking user input by scanner class 
+import java.util.*;// This is the package where scanner class is defined 
+
+class abc {
+    int i, j;
+
+    void get_input() {
+        Scanner ob = new Scanner(System.in);
+        System.out.println("Enter the two number");
+        i = ob.nextInt();
+        j = ob.nextInt();
+    }
+
+    void show() {
+        System.out.println("The two number is " + i + " " + j);
+    }
+}
+
+class xyz {
+    public static void main(String[] args) {
+        abc ob = new abc();
+        ob.get_input();
+        ob.show();
+
+    }
+}

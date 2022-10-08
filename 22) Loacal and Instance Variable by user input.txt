@@ -1,0 +1,42 @@
+//local and Instance Variable by User input  
+import java.io.*;
+
+class abc {
+    String name, address;
+    int roll;
+
+    String getname(String h) {
+        name = h;
+        return name;
+    }
+
+    String getaddress(String n) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter The Name");
+        String s = br.readLine();
+        System.out.println("Name is " + getname(s));
+        address = n;
+        return address;
+    }
+}
+
+class xyz {
+    int getroll(int r) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Address");
+        String s = br.readLine();
+        abc ob1 = new abc();
+        System.out.println("The Address is " + ob1.getaddress(s));
+        ob1.roll = r;
+        return ob1.roll;
+    }
+
+    public static void main(String[] args) throws IOException {
+        xyz ob2 = new xyz();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Roll number");
+        int r = Integer.parseInt(br.readLine());
+        System.out.println("Roll Number is " + ob2.getroll(r));
+
+    }
+}

@@ -1,0 +1,20 @@
+//Passing an object and creating reference with no returning value 
+class abc {
+    int a;
+}
+
+class xyz {
+    public static void main(String[] args) {
+
+        abc ob = new abc();
+        ob.a = 90;
+        xyz ob1 = new xyz();
+        ob1.show(ob);
+    }
+
+    void show (abc o)
+    {
+      System.out.println("A="+o.a);
+    }
+
+}

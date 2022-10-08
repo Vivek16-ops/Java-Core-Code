@@ -1,0 +1,27 @@
+package com.mycompany.nextstepprogrmming;
+
+public class Nested3 {
+
+    public class X {
+
+        public class Y {
+
+            void fun() {
+                System.out.println("Y class fun method");
+            }
+
+        }
+
+        void show() {
+            Y ob = new Y();
+            ob.fun();
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Nested3 ob1 = new Nested3();
+        X ob2 = ob1.new X(); //created the contructor of inner class through outer class apllicable in non static class 
+        ob2.show();
+    }
+}

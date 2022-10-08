@@ -1,0 +1,41 @@
+public class Constructor_overloading {
+    int a, b;
+
+    Constructor_overloading() {  // default constructor
+        a=100;
+        b=200;
+    }
+
+    Constructor_overloading(int x, int y) { // parameterized constructor with two argument
+        a = x;
+        b = y;
+    }
+
+    Constructor_overloading(int p) { // parameterized constructor with one argument
+        a = b = p;
+    }
+
+    Constructor_overloading(Constructor_overloading ob5) { // copy constructor
+        a = ob5.a;
+        b = ob5.b;
+    }
+
+    void show() {
+        System.out.println("A= " + a + " B=" + b);
+    }
+}
+
+class abc {
+    public static void main(String args[]) {
+        Constructor_overloading ob1 = new Constructor_overloading();
+        Constructor_overloading ob2 = new Constructor_overloading(10, 20);
+        Constructor_overloading ob3 = new Constructor_overloading(30);
+        Constructor_overloading ob4 = new Constructor_overloading(ob1);
+
+        ob1.show();
+        ob2.show();
+        ob3.show();
+        ob4.show();
+    }
+} // In java it is not important to use semi colon after end of the class it is
+  // totally depend on the user whether he/she uses or not

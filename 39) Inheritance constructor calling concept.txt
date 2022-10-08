@@ -1,0 +1,30 @@
+class X
+{
+    X()
+    {
+        System.out.println("Parent Class default Constructor");
+    }
+    X(int i)
+    {
+        System.out.println("Parent Class parameterized Constructor");
+    }
+}
+class Y extends X
+{
+    Y()
+    {
+        System.out.println("Child Class default Constructor");
+    }
+    Y(int i)
+    {
+       // super(7);
+        System.out.println("Child Class parameterized Constructor");
+    }
+}
+class abc 
+{
+    public static void main(String[] args) {
+        Y ob  = new Y();
+        Y ob1  = new Y(4);
+    }
+}

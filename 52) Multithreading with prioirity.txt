@@ -1,0 +1,16 @@
+/*Thread Priorities:-The priority of a thread varies from 1 to 10.The default priorities is 
+5.The min priority of a thread is 1 and max is 10.*/
+class A implements Runnable {
+    public void run() {
+        System.out.println(Thread.currentThread() + "Hello Thread");
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        A ob = new A();
+        Thread t = new Thread(ob, "3 rd");
+        System.out.println(t.getPriority());
+        t.start();
+    }
+}

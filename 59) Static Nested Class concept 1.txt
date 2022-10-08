@@ -1,0 +1,30 @@
+ackage com.mycompany.nextstepprogrmming;
+
+/*NESTED CLASS(INNER CLASS)
+There are 4 types of inner classes
+1.static inner class
+2.Non-static inner class
+3.Local inner class
+4.Anonymous inner class
+
+Advantages
+1.Increased encapsulation
+2.Logical grouping of classes
+3.More maintainable code*/
+
+
+public class Nested1 {
+
+    static class X {
+
+        static int i = 1000;
+    }
+
+    public static void main(String[] args) {
+        X ob1 = new X();
+        System.out.println("I= " + Nested1.X.i);//direct calling 
+        System.out.println("I= " + X.i);//Through class name 
+        System.out.println("I= " + ob1.i);//Through object 
+    }
+
+}

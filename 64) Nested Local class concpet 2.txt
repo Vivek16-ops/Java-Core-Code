@@ -1,0 +1,19 @@
+package com.mycompany.nextstepprogrmming;
+
+public class Nested6 {
+
+    static int i = 9999;
+
+    public static void main(String[] args) {
+        Nested6 ob = new Nested6();
+        ob.fun();
+    }
+
+    void fun() {
+        class X {
+
+            int a = i;
+        }
+        System.out.println("I = " + new X().a);
+    }
+}

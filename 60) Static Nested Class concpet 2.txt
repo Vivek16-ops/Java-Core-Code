@@ -1,0 +1,17 @@
+
+package com.mycompany.nextstepprogrmming;
+
+
+public class Nested2 {
+    
+    static class X1{
+        static void fun()
+        {
+            System.out.println("Static inner class fun method");
+        }
+    }
+    public static void main(String[] args) {
+        Nested2.X1 ob = new Nested2.X1();//creating a reference through outer class 
+        ob.fun();
+    }
+}

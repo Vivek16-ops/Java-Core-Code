@@ -1,0 +1,21 @@
+//Reference Variable with no return value by user  input  
+import java.io.*;
+
+class abc {
+    int a;
+}
+
+class xyz {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        abc ob = new abc();
+        System.out.println("Enter the Value of A");
+        ob.a = Integer.parseInt(br.readLine());
+        xyz ob1 = new xyz();
+        ob1.Show(ob);
+    }
+
+    void Show(abc o) {
+        System.out.println("the value of A is " + o.a);
+    }
+}

@@ -1,0 +1,35 @@
+/* Interface 
+In java, classes does not support multiple inhertance whereas interface support multiple inheritance .. 
+In interface, we dont define any of the method.. we can only declared method in interface and define in class 
+In interface, we can declared and define varible only 
+Interface has no constructor because we can't create the object of the Interface 
+Extends :- If you are inherite Interface to Interface then we should use extends keyword 
+Implements :- If you are inherite Interface to class then we should use Implemet keyword 
+*/
+interface X {
+   void fun();
+}
+
+interface Y {
+
+    void show();
+}
+
+class Z implements X, Y // Multiple inheritance
+{
+    public void fun() {
+        System.out.println("Interface X method");
+    }
+
+    public void show() {
+        System.out.println("Interface Y method");
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        Z ob = new Z();
+        ob.fun();
+        ob.show();
+    }
+}

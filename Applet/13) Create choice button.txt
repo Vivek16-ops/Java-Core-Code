@@ -1,0 +1,16 @@
+import java.awt.*;
+import java.applet.*;
+public class component extends Applet
+  {
+   Choice c1;
+   public void init()
+   {
+   setBackground(Color.pink);
+   c1=new Choice();
+   c1.addItem("Male");
+   c1.add("Female");
+   c1.add("");
+   add(c1);
+   }
+   
+ }

@@ -1,0 +1,27 @@
+package com.vivek.helloworld;
+
+/*In this program,join() is called inside the main thread through Thread object 
+t1.Therefore the main thread is going to wait until t1 expires*/
+class Y2 implements Runnable {
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread());
+    }
+}
+
+public class join1 {
+
+    public static void main(String[] args) {
+        Y2 ob = new Y2();
+        Thread t1 = new Thread(ob);
+        t1.start();
+
+        try {
+            t1.join();
+        } catch (InterruptedException e) {
+
+        }
+        System.out.println("Inside main method");
+    }
+}

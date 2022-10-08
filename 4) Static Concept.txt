@@ -1,0 +1,21 @@
+// we can call static method from outside the class through class name and object name only 
+
+public class static_2 {
+    static void fun() {
+        System.out.println("Hii Vivek");
+    }
+
+}
+
+class a {
+    static void display1() {
+        static_2.fun(); // Calling by class name
+        static_2 ob = new static_2();
+        ob.fun(); // Calling through object
+    }
+
+    public static void main(String args[]) {
+        display1();// This function is present in class abc so here we can directly call it by
+                   // function name
+    }
+}

@@ -1,0 +1,52 @@
+package com.mycompany.nextstepprogrmming;
+
+public class Nested4 {
+
+    String name;
+    static int roll;
+
+    String getname(String n) {
+        name = n;
+        return name;
+    }
+
+    static int roll(int r) {
+        roll = r;
+        return roll;
+    }
+
+    class Test {
+
+        String address;
+        static int age;
+
+        String getaddress(String m) {
+            address = m;
+            return address;
+        }
+
+        static int age(int a) {
+            age = a;
+            return age;
+        }
+
+        void show() {
+            System.out.println("Name is " + getname("Vivek"));
+            System.out.println("Roll is " + roll(45));
+            System.out.println("Address is " + getaddress("Ranchi"));
+            System.out.println("Age is " + age(20));
+        }
+    }
+
+    public static void main(String[] args) {
+        Nested4 ob1 = new Nested4();
+        // ob1.display();//Normal method by using function 
+        Test ob2 = ob1.new Test();
+        ob2.show();
+    }
+
+   /* void display() {
+        Test ob3 = new Test();
+        ob3.show();
+    }*/
+}

@@ -1,0 +1,28 @@
+class A {
+    int a = 23, b = 45, c;
+
+    void third() {
+        System.out.println("A=" + a + " B=" + b);
+        System.out.println("Swapping of two number using third varivale");
+        c = a;
+        a = b;
+        b = c;
+        System.out.println("After swapping: A=" + a + " B=" + b);
+    }
+
+    void one() {
+        System.out.println("Swapping of two number without using third varivale");
+        a = a * b;
+        b = a / b;
+        a = a / b;
+        System.out.println("After swapping A=" + a + " B=" + b);
+    }
+};
+
+class swap_number {
+    public static void main(String args[]) {
+        A ob = new A();
+        ob.third();
+        ob.one();
+    }
+};

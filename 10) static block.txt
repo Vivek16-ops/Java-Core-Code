@@ -1,0 +1,15 @@
+class abc {
+    static // static block
+    // static block execute just before the main stream
+    {
+        System.out.println("Hello world");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Hello Vivek");
+    }
+
+    static {
+        System.out.println("Hello");
+    }
+}

@@ -1,0 +1,46 @@
+/*
+ * Difference between abstract class and interface
+ * 1. Abstract class never support multiple inheritance where as interface
+ * supports
+ * 2. In abstract class methods may be abstract may not be. But in interface
+ * each
+ * method are abstract(Only declared.By default visiblity of interface is
+ * public).
+ * 3.In abstract class we can design non abstract methods and constructor but in
+ * interface we neither define constuctor nor any method.
+ * 4.In abstract class we can declare any type of variables but in interface the
+ * variables
+ * are bound to be initialized as public static and final.
+ */
+interface X 
+{
+    int i = 90;
+    void fun();
+}
+interface Y extends X 
+{
+    int j = 45; 
+    void show();
+}
+class Z implements X ,Y
+{
+    public void fun()
+    {
+        System.out.println("Interface X method");
+    }
+    public void show()
+    {
+        System.out.println("Interface Y method");
+    }
+}
+class abc 
+{
+   public static void main(String[] args) {
+       X ob = new Z(); //Creating reference of Innterface X
+       ob.fun();
+       System.out.println("I = "+ob.i);
+       ((Y)ob).show(); //Temporarily making ob to reference of Interface Y
+       System.out.println("J = "+((Y)ob).j);
+   }
+}
+

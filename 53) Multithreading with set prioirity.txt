@@ -1,0 +1,37 @@
+class X implements Runnable {
+    public void run() {
+        System.out.println(Thread.currentThread() + "X thread");
+    }
+}
+
+class Y implements Runnable {
+    public void run() {
+        System.out.println(Thread.currentThread() + "Y thread");
+    }
+}
+
+class Z implements Runnable {
+    public void run() {
+        System.out.println(Thread.currentThread() + "Z thread");
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        X ob1 = new X();
+        Y ob2 = new Y();
+        Z ob3 = new Z();
+
+        Thread t1 = new Thread(ob1, "1 st");
+        Thread t2 = new Thread(ob2, "2 nd");
+        Thread t3 = new Thread(ob3, "3 rd");
+
+        t1.setPriority(7);
+        t2.setPriority(10);
+        t3.setPriority(3);
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}

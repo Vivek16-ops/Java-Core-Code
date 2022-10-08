@@ -1,0 +1,15 @@
+ import java.awt.*;
+import java.applet.*;
+/* 
+<applet code="Lines" width=300 height=200>
+</Applet>
+*/
+public class Lines123 extends Applet
+{
+    public void paint(Graphics g)
+    {
+	g.drawOval(100,100,40,20);/*void drawRect(int c1,int d1,int c2,int d2) Here c1,d1 are 
+        the coordinate where the drawing of rectangle starts and c2,d2 represent the width and height*/
+
+    }
+}

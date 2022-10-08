@@ -1,0 +1,33 @@
+package com.vivek.helloworld;
+
+public class wrap1 {
+
+    public static void main(String[] args) {
+        String s = "20";
+        System.out.println("String is: " + s);//20
+        int i = Integer.parseInt(s);//string coverted in integer
+        System.out.println("Integer before incremment: " + i);//20
+        i++;
+        System.out.println("Integer after increment: " + i);//21
+        double d = Double.parseDouble(s);//string converted into double
+        System.out.println("String Converted into double: " + d);//20.0
+        d += 5;
+        System.out.println("Double After Increment " + d);//25.0
+        short s1 = Short.parseShort(s); //string converted into shorts
+        System.out.println("String converted into shorts: "+s1);//20
+        s1+=10;
+        System.out.println("After Increment short is: "+s1);//30
+        s = Integer.toString(i);//Integer converted into string
+        System.out.println("Integer coverted into string: "+s);//21
+        s+=1;
+        System.out.println("Concardinate value of string: "+s);//211
+        s= Short.toString(s1);
+        System.out.println("Short converted into string: "+s);//30
+        s+=5;
+        System.out.println("Concardinate value of string: "+s);//305
+        s=Double.toString(d);
+        System.out.println("Double converted into string: "+s);//25.0
+        s+=6;
+        System.out.println("Concardinate Value of string: "+s);//25.06
+    }
+}

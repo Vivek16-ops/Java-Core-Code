@@ -1,0 +1,13 @@
+
+package com.mycompany.nextstepprogrmming;
+
+//public String[] split(String s)//this method is used to split the String
+public class String18 {
+    public static void main(String[] args) {
+        String s1= "keep calm and try coding";
+        String s2[] = s1.split(" ");
+        for (int i = 0; i < s1.length(); i++) {
+            System.out.println(s2[i]);
+        }
+    }
+}

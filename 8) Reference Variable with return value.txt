@@ -1,0 +1,18 @@
+//creating a reference with retuen value
+class abc {
+    int a;
+}
+
+class xyz {
+    public static void main(String[] args) {
+        xyz ob1 = new xyz();
+        abc X = ob1.show();// Here X is a reference of ob
+        System.out.println("A=" + X.a);
+    }
+
+    abc show() {
+        abc ob = new abc();
+        ob.a = 100;
+        return ob;
+    }
+}

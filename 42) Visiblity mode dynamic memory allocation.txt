@@ -1,0 +1,36 @@
+/* Method Overiddden and Dynamic method Calling  
+Method Overidden :- It is the case of inheritance where super class method is overidden in child class
+Private , Static and final method cannot be overidden*/
+class X {
+    int i = 90;
+
+    X() {
+        System.out.println("X class constructor");
+    }
+
+   protected void fun() {
+        System.out.println("X class fun method");
+    }
+}
+
+class Y extends X {
+    int i = 45;
+
+    Y() {
+        System.out.println("Y class constructor");
+    }
+
+    public void fun() {
+        System.out.println(" Y class fun method");
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+
+        X ob = new Y();// Dynamic method dispatch
+        System.out.println(ob.i);
+        ob.fun();
+    }
+}
+/* wecannot reduce the visiblity mode of base class as compared to derived class */ 

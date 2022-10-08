@@ -1,0 +1,13 @@
+
+package com.mycompany.nextstepprogrmming;
+
+
+public class String14 {
+    public static void main(String[] args) {
+        String s = "keep calm and try coding";
+        int i = s.indexOf("a");
+        System.out.println(i);
+        int j = s.indexOf("a",7);
+        System.out.println(j);
+    }
+}

@@ -1,0 +1,9 @@
+class abc 
+{
+    public static void main(String[] args) {
+        System.out.println(Thread.currentThread());
+    }
+}
+/*Here the output indicates that the current executing thread 
+is the Thread class object,whose name is main,priority is 5 and
+belongs to main group*/

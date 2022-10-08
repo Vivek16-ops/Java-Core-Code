@@ -1,0 +1,16 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String12 {
+
+    public static void main(String[] args) {
+        String s3 = "Hello Java";
+        String s4 = "hello java";
+        boolean b = s3.equalsIgnoreCase(s4); //This will ignote all upper and lower case in String
+        System.out.println(b);
+
+        String s5 = "Java";
+        String s6 = "C++";
+        int i = s5.compareTo(s6);//It display difference value of ascii code of first char in string 
+        System.out.println(i);
+    }
+}

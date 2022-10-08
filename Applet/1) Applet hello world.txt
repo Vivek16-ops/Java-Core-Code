@@ -1,0 +1,27 @@
+import java.applet.*;
+import java.awt.*;
+public class HelloWorldApplet extends Applet
+{
+  String msg="HELLO WORLD";
+   public void init()
+   {
+    setBackground(Color.red);
+    setForeground(Color.black);
+   }
+   public void start()
+   {
+    msg=msg+"  This is a java class";
+   }
+   public void stop()
+   {
+   }
+  public void paint(Graphics g)
+    {
+    
+	g.drawString(msg,50,25);
+	}
+}
+
+
+
+

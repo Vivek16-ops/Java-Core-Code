@@ -1,0 +1,30 @@
+/*Unchecked Checked Exception
+Error in its child class and RunTimeException is treated as 
+unchecked exception.So unchecked exception is checked by the compiler
+1.ArithmeticException
+2.ArrayIndexOutOfBoundException
+3.ClassNotFound
+4.ClassCastException
+5.CloneNotSupportedException
+6.NullPointerException
+7.NumberFormatException etc
+III. Chained Exception
+If an application respond to an exception by throwing another
+exception is called Chained Exception*/
+class X extends Exception {
+    X(String msg) {
+        super(msg);
+    }
+}
+
+class abc {
+    public static void main(String[] args) throws X {
+        try {
+            int b = 10 / 0;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            System.out.println(e.getCause());
+            throw new X("chained exception");
+        }
+    }
+}

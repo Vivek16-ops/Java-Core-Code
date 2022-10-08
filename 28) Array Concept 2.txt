@@ -1,0 +1,17 @@
+//Creating an Array with different Syntax 
+class abc {
+    public static void main(String[] args) {
+        int arr[];
+        int i;
+        arr = new int[2];
+        // arr[0] = 1;
+        // arr[1] = 2;
+
+        for (i = 0; i < 2; i++) {
+            arr[i] = i;
+            System.out.println(arr[i]);
+        }
+        // System.out.println(arr[0]);
+        // System.out.println(arr[1]);
+    }
+}

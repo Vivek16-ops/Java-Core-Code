@@ -1,0 +1,13 @@
+import java.awt.*;
+import java.applet.*;
+/* 
+<applet code="Lines" width=300 height=200>
+</Applet>
+*/
+public class Lines123 extends Applet
+{
+    public void paint(Graphics g)
+    {
+	g.drawLine(100,100,400,400);
+    }
+}

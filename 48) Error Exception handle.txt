@@ -1,0 +1,38 @@
+/*Unchecked Exception
+1.Arithmetic Exp
+2. Array IndexOutOfBoundException
+3.NumberFormatException
+4.NullPointerException etc*/
+class X
+{
+    void fun()
+    {
+        try 
+        {
+            throw new Error();
+        }
+        catch(Throwable e)
+        {
+            System.out.println("Fun method error exception catched");
+        }
+    }
+    void show() throws Error
+    {
+       throw new Error();
+    }
+}
+class abc 
+{
+    public static void main(String[] args) {
+        X ob = new X();
+        ob.fun();
+        try 
+        {
+            ob.show();
+        }
+        catch(Throwable e)
+        {
+            System.out.println("Show method error exception catched");
+        }
+    }
+}

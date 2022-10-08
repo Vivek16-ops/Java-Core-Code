@@ -1,0 +1,35 @@
+class abc {
+    String name, address; // Instance Variable
+    int roll; // Instance variable
+
+    // Local variable is defined as the varible which are defined in a particular
+    // function and method
+
+    String getname(String h) {
+        name = h;
+        return name;
+    }
+
+    String getaddress(String n) {
+        System.out.println("Name is " + getname("Vivek"));
+        address = n;
+        return address;
+    }
+}
+
+class xyz {
+
+    int getroll(int r) {
+        abc ob = new abc();
+        System.out.println("Address is " + ob.getaddress("Ranchi"));
+        ob.roll = r;
+        return ob.roll;
+    }
+
+    public static void main(String[] args) {
+        xyz ob1 = new xyz();
+        // int p = ob1.getroll(43);
+        // System.out.println("Roll is " + p);
+        System.out.println("Roll is " + ob1.getroll(43));
+    }
+}

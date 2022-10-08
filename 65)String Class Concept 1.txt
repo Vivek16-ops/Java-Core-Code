@@ -1,0 +1,14 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String1 {
+
+    public static void main(String[] args) {
+        String ob1 = "java";//Here we create a Reference of String class 
+        String ob2 = new String();//Here we have created the object of String class 
+        if (ob1 == ob2) {
+            System.out.println("Both are equal");
+        } else {
+            System.out.println("Both are not equal");
+        }
+    }
+}

@@ -1,0 +1,33 @@
+abstract class X {
+    int i = 90;
+
+    X() {
+        System.out.println("X class Constructor");
+    }
+
+    public abstract void fun();//declared the abstract method
+    abstract void fun1();//declared the second abstract method
+
+}
+
+class Y extends X
+{
+   int i = 45;
+   public void fun() // Defining the abstract method 
+   {
+     System.out.println("Abstract method in Y class");
+   }
+    void fun1() // Defining the 2nd abstract method whose visibloty mode is default
+   {
+     System.out.println("Default 2nd Abstract method in Y class");
+   }
+}
+class abc 
+{
+    public static void main(String[] args) {
+        X ob = new Y();
+        System.out.println(ob.i);
+        ob.fun();
+        ob.fun1();
+    }
+}

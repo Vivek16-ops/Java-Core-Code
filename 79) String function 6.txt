@@ -1,0 +1,20 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String16 {
+
+    public static void main(String[] args) {
+        String s1 = "Hello";
+        String s2 = s1.concat(" World");
+        System.out.println(s2);
+        String s3 = "JAVA";
+        String s4 = s3.toLowerCase();
+        System.out.println(s4);
+        String s5 = "java";
+        String s6 = s5.toUpperCase();
+        System.out.println(s6);
+        String s7 = "  java  ";
+        String s8 = s7.trim();
+        System.out.println(s8);
+    }
+
+}

@@ -1,0 +1,29 @@
+package com.vivek.helloworld;
+
+class Y implements Runnable {
+
+    public void run() {
+        for (int i = 0; i <= 5; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+
+            }
+            System.out.println(Thread.currentThread() + "Value is " + i);
+        }
+    }
+}
+
+public class mul7 {
+
+    public static void main(String[] args) {
+        Y ob = new Y();
+        Y ob1 = new Y();
+
+        Thread t1 = new Thread(ob);
+        Thread t2 = new Thread(ob1);
+
+        t1.start();
+        t2.start();
+    }
+}

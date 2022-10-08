@@ -1,0 +1,28 @@
+package com.vivek.helloworld;
+
+The yield() method of thread class causes the currently executing thread object to temporarily pause and allow other threads to execute. 
+
+class X6 implements Runnable {
+
+    public void run() {
+        System.out.println(Thread.currentThread());
+        Thread.yield();
+        System.out.println(Thread.currentThread());
+    }
+}
+
+public class mul5 {
+
+    public static void main(String[] args) {
+        X6 ob = new X6();
+        X6 ob2 = new X6();
+        Thread t1 = new Thread(ob);
+        Thread t2 = new Thread(ob2);
+        t1.setPriority(9);
+        t2.setPriority(4);
+        t1.start();
+        t2.start();
+
+    }
+
+}

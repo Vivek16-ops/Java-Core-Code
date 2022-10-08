@@ -1,0 +1,20 @@
+//Exception Handling By Try and Catch Block 
+import java.io.*;
+
+class abc {
+    public static void main(String[] args) {
+        InputStreamReader ob = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(ob);
+        System.out.println("Enter Your Name");
+        String s = "";// This is important to initialize "s" because we assign somthing on s later on
+
+        try {
+            s = br.readLine();
+        } catch (IOException e) // here e is reference must remeber one should always use reference while using
+                                // catch statement
+        {
+            System.out.println("IoException Found");
+        }
+        System.out.println("Your Name is " + s);
+    }
+}

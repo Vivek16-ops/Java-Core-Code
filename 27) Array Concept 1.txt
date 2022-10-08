@@ -1,0 +1,37 @@
+/* Array In Java */
+// Array is the collection of similar type of data
+// It stores memory dynamically
+// By Default its memory is zero
+/*
+ * Deafault value of some data type are as follows:
+ * byte-0
+ * int-0
+ * float-0.0f
+ * char-'\u0000'
+ * short-0
+ * boolean-false
+ * double-0.0d
+ * long-0L
+ * refrence-null
+ */
+/*
+ * Syntax
+ * data_type var_name[] = new data_type[size];
+ * or
+ * data_type[] var_name = new data_type[size];
+ * or
+ * data_type var_name[size];
+ * or
+ * data_type var_name[];
+ * var_name = new data_type[size];
+ */
+
+class abc {
+    public static void main(String[] args) {
+        int arr[] = new int[2];
+        // arr[0] = 1;
+        // arr[1] = 2;
+        System.out.println(arr[0]);// this show the default value because the arr[0] and arr[1] is not initialize
+        System.out.println(arr[1]);
+    }
+}

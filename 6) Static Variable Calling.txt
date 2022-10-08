@@ -1,0 +1,17 @@
+class abc {
+    // Code for calling static variable
+
+    static int i = 10;
+
+    static void display() {
+        System.out.println("Hello");
+    }
+
+    public static void main(String[] args) {
+        display();
+        System.out.println("I=" + i);
+        System.out.println("I=" + abc.i);
+        abc obj = new abc();
+        System.out.println("I=" + obj.i);
+    }
+}

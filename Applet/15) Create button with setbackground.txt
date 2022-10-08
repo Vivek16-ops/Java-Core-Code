@@ -1,0 +1,12 @@
+import java.awt.*;
+import java.applet.*;
+public class comp45 extends Applet
+{
+Button b1;  
+  public void init()
+  {
+   setBackground(Color.pink);
+   b1=new Button("JAVA");
+   add(b1);
+  }
+}

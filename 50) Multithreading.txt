@@ -1,0 +1,19 @@
+/* Multithreading 
+thread = light wait process 
+process = Program in execution
+*/
+class X implements Runnable
+{
+    public void run()
+    {
+        System.out.println("Hii Vivek");
+    }
+}
+class abc 
+{
+    public static void main(String[] args) {
+        X ob = new X();
+        Thread t = new Thread(ob);
+        t.start();
+    }
+}

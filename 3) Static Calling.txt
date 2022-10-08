@@ -1,0 +1,13 @@
+public class static_1 {
+
+    static void fun() {
+        System.out.println("Hello Vivek");
+    }
+
+    public static void main(String[] args) {
+        fun(); // Static function direct calling
+        static_1.fun(); // Calling of static function by class name
+        // static_1 ob1 = new static_1();
+        // ob1.fun(); // Calling of static function throgh object
+    }
+}

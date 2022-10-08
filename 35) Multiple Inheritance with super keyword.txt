@@ -1,0 +1,22 @@
+class X {
+    void show() {
+        System.out.println("Hello world");
+    }
+}
+
+class Y extends X {
+
+}
+
+class Z extends Y {
+    Z() {
+        super.show();
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        Z ob = new Z();
+    }
+
+}

@@ -1,0 +1,42 @@
+/* Method Overiddden and Dynamic method Calling  
+Method Overidden :- It is the case of inheritance where super class method is overidden in child class
+Private , Static and final method cannot be overidden
+Dynamic Method Dispatch = Dynamic method dispatch is the mechanism by which a call 
+to an overridden method is resolved at run time, rather than compile time.*/
+class X {
+    int i = 90;
+
+    X() {
+        System.out.println("X class constructor");
+    }
+
+    void fun() {
+        System.out.println("X class fun method");
+    }
+}
+
+class Y extends X {
+    int i = 45;
+
+    Y() {
+        System.out.println("Y class constructor");
+    }
+
+    void fun() {
+        System.out.println(" Y class fun method");
+    }
+
+    void fun1() {
+        System.out.println(" Y class fun1 method");
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        // Y ob = new Y();//Simple overide
+        X ob = new Y();// Dynamic method dispatch
+        System.out.println(ob.i);
+        ob.fun();
+        // ob.fun1();//we cannot call the ondividual method by dynamic method dispatch
+    }
+}

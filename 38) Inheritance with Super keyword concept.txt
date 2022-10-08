@@ -1,0 +1,29 @@
+class X
+ {
+    X() 
+    {
+        System.out.println("X constructor");
+    }
+}
+
+class Y extends X
+ {
+    Y() 
+    {
+        super();
+        System.out.println("Y constructor");
+    }
+}
+
+class abc extends Y
+{
+     abc()
+     {
+        super();
+        System.out.println("abc constructor");
+     }
+     public static void main(String[] args) {
+          abc ob = new abc();
+          //Y ob = new Y();
+     }
+}

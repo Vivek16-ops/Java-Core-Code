@@ -1,0 +1,21 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String8 {
+
+    public static void main(String[] args) {
+        String ob1 = new String("Java");
+        String ob2 = new String("Java");
+        if (ob1.equals(ob2))//Here It compares the content of the objects
+        {
+            System.out.println("Hello");
+        }else{
+            System.out.println("Hiiii");
+        }
+        if(ob1==ob2)//This compares the address of the object
+        {
+            System.out.println("Both are same");
+        }else{
+            System.out.println("Both are not same");
+        }
+    }
+}

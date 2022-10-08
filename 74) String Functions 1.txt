@@ -1,0 +1,19 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String10 {
+
+    public static void main(String[] args) {
+        String s1 = "Hello World";
+        int x = s1.length();
+        System.out.println("The lenth of string is " + x);
+        char ch[] = new char[5];
+        s1.getChars(1, 2, ch , 2);
+        for (int i = 0; i < 5; i++) {
+            System.out.print(ch[i]);
+        }
+    }
+}
+// public void getchar method
+//getChars(srart,end,character array , index) yaha index ka matlab hai
+//ki tum kaha se character array me value store kara rha hai 
+//Note : ending chracter ko nhi lega ye 

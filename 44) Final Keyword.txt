@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+/*Final keyword 
+If class is declared final then that class can't be inherited and cannot be declared as abstract 
+If method is declared final then that method can't be overidden . When we define final method we can't use abstract keyqrod 
+If variable is declared final then the java compiler treat it as constant .. We can declare static , local , instant varibale as final */
+class X {
+
+    void fun() {
+        final int i = 90; // Final varible declared
+        int j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Vale of Integer J ( 'I' is Declared final you can't enter the value of 'I' ) ");
+        // i = sc.nextInt(); //Here we cant relocate the value of i because it is
+        // declared as final
+        j = sc.nextInt();
+        System.out.println("I= " + i + " J= " + j);
+    }
+
+    final void Show() // Final method declared
+    {
+        System.out.println("My Name is Vivek");
+    }
+}
+
+final class Y extends X // Final class declared
+{
+    void diplay() {
+        System.out.println("Final class function calling");
+    }
+    /*
+     * void Show() //cannot overide the final method this gives an error
+     * {
+     * }
+     */
+}
+
+/*
+ * class Z extends Y // cannot inherit the final class Y
+ * {
+ * 
+ * }
+ */
+class abc {
+    public static void main(String[] args) {
+        Y ob = new Y();
+        ob.fun();
+        ob.Show();
+        ob.diplay();
+    }
+}

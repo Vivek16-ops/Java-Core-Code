@@ -1,0 +1,11 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String2 {
+
+    public static void main(String[] args) {
+        char a[] = {'a', 'b', 'c'};
+        String ob4 = new String(a);//Converted character into string
+        System.out.println(ob4);
+    }
+
+}

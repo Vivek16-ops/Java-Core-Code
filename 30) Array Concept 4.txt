@@ -1,0 +1,26 @@
+/*Creating a 2D Array 
+Syntax 
+data_type[][] Var_name = new data_type[size][size]; 
+OR
+data_type Var_name[][] = new data_type[size][size];
+OR
+int arr[][];
+arr= new data_type[size][size];
+*/
+
+class abc {
+    public static void main(String[] args) {
+        int a[][] = new int[4][];// NuLL
+        // int a[][] = new int[4][0];//Address
+        // int a[][] = new int[][4];//error
+        // int a[][] = new int[0][4];//Exception
+        // int a[][] = new int[0][0];//Exception
+        // int a[][] = new int[][];//errror
+
+        System.out.println(a[0]);
+        System.out.println(a[1]);
+        System.out.println(a[2]);
+        System.out.println(a[3]);
+
+    }
+}

@@ -1,0 +1,14 @@
+import java.awt.*;
+import java.applet.*;
+public class PolygonDraw1 extends Applet
+{
+  Image img;
+   public void init()
+    {
+    img=getImage(getDocumentBase(),"pallab.jpg");
+    }
+    public void paint(Graphics g)
+    {
+     g.drawImage(img,45,79,this);
+    }
+}

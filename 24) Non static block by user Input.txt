@@ -1,0 +1,23 @@
+//Creating non Static Block by user Input  
+import java.io.*;
+
+class abc {
+
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter your Name");
+        String s = "";
+
+        try {
+            s = br.readLine();
+        } catch (IOException e) {
+        }
+        System.out.println("Your Name Is " + s);
+
+    }
+
+    public static void main(String[] args) {
+        abc ob = new abc();
+        System.out.println("You are now in main method");
+    }
+}

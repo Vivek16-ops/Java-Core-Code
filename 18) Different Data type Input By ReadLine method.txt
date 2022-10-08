@@ -1,0 +1,16 @@
+import java.io.*;
+
+class abc {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Your Name");
+        String s = br.readLine();
+        System.out.println("Your name is " + s);
+        System.out.println("Enter your Enrollment Number");
+        int r = Integer.parseInt(br.readLine());
+        System.out.println("Your Enrollment Number is " + r);
+        System.out.println("Enter Your Salary");
+        float f = Float.parseFloat(br.readLine());
+        System.out.println("Your Salary is " + f);
+    }
+}

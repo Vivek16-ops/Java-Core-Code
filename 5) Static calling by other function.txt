@@ -1,0 +1,22 @@
+class abc {
+    public static void main(String[] args) {
+        // Here we call the non static function
+        // please remember non ststic function only call by class object
+        abc obj1 = new abc();
+        obj1.func1();
+    }
+
+    void func1() {
+        // Static function calling in non static function
+        System.out.println("Hii Vivek");
+        fun();
+        abc.fun();
+        abc obj = new abc();
+        obj.fun();
+    }
+
+    static void fun() {
+        System.out.println("Hii Prince");
+    }
+
+}

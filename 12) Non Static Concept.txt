@@ -1,0 +1,16 @@
+class abc {
+
+    static {
+        System.out.println("I am in Static Block"); // This display first because static block called just before the
+                                                    // main
+        abc ob = new abc(); // Here object is created so non static block called secondly
+    }
+
+    public static void main(String[] args) {
+        System.out.println("I am in main method");// This will called third
+    }
+
+    {
+        System.out.println("I am in Non Static Block");
+    }
+}

@@ -1,0 +1,25 @@
+package com.vivek.helloworld;
+
+//Sleep method is used to sleep the currently running thread for specific period of time .. 
+
+class X7 implements Runnable {
+
+    public void run() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            //System.out.println(e);
+        }
+         System.out.println(Thread.currentThread());
+    }
+}
+
+public class mul6 {
+
+    public static void main(String[] args) {
+        X7 ob = new X7();
+        Thread t1 = new Thread(ob);
+        t1.start();
+        t1.interrupt();
+    }
+}

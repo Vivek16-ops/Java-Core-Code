@@ -1,0 +1,10 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String4 {
+
+    public static void main(String[] args) {
+        String ob = new String("Hello");//contructor envoking 
+        String ob1 = new String(ob);//calling the envoked contructor 
+        System.out.println(ob1);
+    }
+}

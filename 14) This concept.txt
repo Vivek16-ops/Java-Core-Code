@@ -1,0 +1,26 @@
+class abc {
+    String name;
+    int roll;
+
+    // To call multiple constructor using "This" keyword .. one sgould always
+    // remeber that it must be an frist statement in every particular method
+    abc() {
+        System.out.println("Information about student");
+    }
+
+    abc(String n) {
+        this();
+        name = n;
+        System.out.println("Name is = " + name);
+    }
+
+    abc(int r) {
+        this("Vivek");
+        roll = r;
+        System.out.println("Roll is = " + roll);
+    }
+
+    public static void main(String[] args) {
+        abc ob = new abc(45);
+    }
+}

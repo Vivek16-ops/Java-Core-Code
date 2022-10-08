@@ -1,0 +1,12 @@
+import java.applet.*;
+import java.awt.*;
+public class pqr extends Applet
+{
+  Font f=new Font("TimesRoman",Font.BOLD,10);
+  public void paint(Graphics g)
+    {
+     g.setFont(f);
+     setBackground(Color.red);
+      g.drawString("Hello World",100,100);
+	}
+}

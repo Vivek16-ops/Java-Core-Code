@@ -1,0 +1,23 @@
+import java.awt.*;
+import java.applet.*;
+public class component extends Applet
+  {
+   Checkbox  c1,c2,c3,c4,c5;
+   CheckboxGroup cbg;
+   public void init()
+   {
+   setBackground(Color.pink);
+   c1=new Checkbox("C");
+   c2=new Checkbox("C++");
+   c3=new Checkbox("Java");
+   cbg=new CheckboxGroup();
+   c4=new Checkbox("Male",cbg,true);
+   c5=new Checkbox("Female",cbg,false);
+   add(c1);
+   add(c2);
+   add(c3);
+   add(c4);
+   add(c5);
+   }
+   
+ }

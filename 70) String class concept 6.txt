@@ -1,0 +1,15 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String6 {
+
+    public static void main(String[] args) {
+        String ob1 = "Java";
+        String ob2 = "java";
+     
+        if (ob1 == ob2) { //It check the content in the reference 
+            System.out.println("Both are same");
+        } else {
+            System.out.println("Both are mot same");
+        }
+    }
+}

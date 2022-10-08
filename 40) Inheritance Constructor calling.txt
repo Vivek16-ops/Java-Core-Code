@@ -1,0 +1,25 @@
+class X
+{
+    X()
+    {
+        System.out.println("X class default constructor");
+    }
+    X(int i)
+    {
+        System.out.println("X class parameterized constructor");   
+    }
+}
+class Y extends X
+{
+    Y(int j)
+    {
+        //super(7) 
+        System.out.println("Y class parameterized constructor");  
+    }
+}
+class abc
+{
+    public static void main(String[] args) {
+        Y ob =new Y(10);
+    }
+}

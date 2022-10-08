@@ -1,0 +1,36 @@
+/*
+ * "this" is a keyword or a predefined instance reference that refers
+ * to current object.As it is a non static reference so it is never
+ * invoked in static method and static block.The use of "this" keyword
+ * is to call multiple constructor in a single class,and "this" must
+ * be the first statement withen the constructor
+ */
+
+class abc {
+    int x, y;
+
+    abc()// default constructor
+    {
+        this.x = 10; // It is already presented in every such type of cases but it is hidden
+        this.y = 20;
+    }
+
+    abc(int a, int b)// parameterized constructor
+    {
+        this.x = a;
+        this.y = b;
+    }
+
+    void show() {
+        System.out.println("X=" + x + " Y=" + y);
+    }
+
+    public static void main(String[] args) {
+        abc ob = new abc();
+        abc ob1 = new abc(23, 87);
+
+        ob.show();
+        ob1.show();
+
+    }
+}

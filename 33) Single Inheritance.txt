@@ -1,0 +1,29 @@
+//Inheritance = It is the feature that support Code Reusalblity 
+/*Syntax
+class abc 
+{
+    code 
+}
+
+class xyz extends abc 
+{
+    code 
+}
+*/
+
+class A {
+    void show() {
+        System.out.println("I am parent class");
+    }
+}
+
+class B extends A {
+
+}
+
+class abc {
+    public static void main(String[] args) {
+        B ob = new B();
+        ob.show();
+    }
+}

@@ -1,0 +1,33 @@
+/*
+ * Super Keyword
+ * It is the keyword that help to access the member of the Super class .. We
+ * cannot use super keyword inside static and non static block ..If super class
+ * instance variable name is same as child class instance variable
+ * then we can use super keyword
+ * Super keyword must be the first statement in any method and the contrutor 
+ * It only access the method and the variable of its parent class only .. It is not capable of acccessing its grand parents class 
+ */
+
+class X {
+    int i = 30;// It will accessed only through object
+}
+
+class Y extends X {
+    int i = 90;
+}
+
+class Z extends Y {
+    int i = 200;
+
+    void show() {
+        System.out.println(i);// 200
+        System.out.println(super.i);// 90
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        Z ob = new Z();
+        ob.show();
+    }
+}

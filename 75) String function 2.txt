@@ -1,0 +1,18 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String11 {
+
+    public static void main(String[] args) {
+        String s2 = "Hello";
+        int i = s2.length();
+        char ch = s2.charAt(4);
+        System.out.println("Char at position 3 is "+ch);
+        byte b[] = new byte[i];
+        b = s2.getBytes();
+        for (int j = 0; j < i; j++) {
+            System.out.println(b);
+        }
+    }
+}
+//public byte[] getBytes()
+//This method is used to convert a unicode String into an array of bytes

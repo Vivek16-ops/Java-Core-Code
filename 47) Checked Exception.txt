@@ -1,0 +1,59 @@
+/*
+ * Exception :-
+ * It is the predefined class present in java.lang package
+ * A exception is the abnormal behaviour which occurs during the excecution of
+ * program and disrupt the normal flow of instruction
+ * The unexpected situations are
+ * 1.array index out of bound
+ * 2. number divided by zero
+ * 3. file not found
+ * 4. problem in network connectivity
+ * etc
+ * Keywords:-
+ * try,catch,throw,throws and finally
+ * Syntax:-
+ * try
+ * {
+ * ////
+ * }catch(Exception e)
+ * {
+ * ////
+ * }
+ * finally
+ * {
+ * ////
+ * }
+ * 
+ * Type of Exceptions
+ * 1.Checked Exception
+ * 2.Unchecked Exception
+ * 3.Chained Exception
+ */
+
+/* Checked Exception*/
+class X {
+    void fun() {
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            System.out.println("Fun method exception catched");
+        }
+    }
+
+    void show() throws Exception {
+        throw new Exception();
+    }
+}
+
+class abc {
+    public static void main(String[] args) {
+        X ob = new X();
+        ob.fun();
+        try {
+            ob.show();
+
+        } catch (Exception e) {
+            System.out.println("Show method exception catched");
+        }
+    }
+}

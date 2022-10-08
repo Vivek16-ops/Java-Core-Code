@@ -1,0 +1,30 @@
+
+//Static calling through User Input 
+import java.io.*;
+
+class abc {
+    static void fun() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Your Name");
+        String s = br.readLine();
+        System.out.println("Enter Your Organisation Name ");
+        String w = br.readLine();
+        System.out.println("Enter Your Roll Number");
+        int r = Integer.parseInt(br.readLine());
+        System.out.println("------------------*****************--------------------**************--------------");
+        System.out.println("Your Name is " + s);
+        System.out.println("Your Organisation Name is " + w);
+        System.out.println("Your Roll Number is " + r);
+
+    }
+}
+
+class xyz {
+    public static void main(String[] args) throws IOException {
+        abc.fun();// calling Through class name
+        /*
+         * abc ob = new abc();
+         * ob.fun();//calling through object
+         */
+    }
+}

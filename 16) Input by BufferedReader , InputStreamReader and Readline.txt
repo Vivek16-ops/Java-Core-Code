@@ -1,0 +1,40 @@
+/*
+import java.io.*;
+     OR
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;*/
+
+/*
+ * By The help of BuffeReader , InputStreamReader and readLine
+ * This type of classes are present in java.io.package
+ * public String readLine() throws IOException
+ * {
+ * .....
+ * }
+ */
+/*
+ * java.io = Package
+ * parseInt() = predefined Method
+ * InputStreamReader = Class
+ */
+/*
+ * Syntax
+ * InputStreamReader ob = new InputStreamReader(System.in)
+ * BufferedReader br = new BufferedReader(ob)
+ * OR
+ * BufferedReader br =new BufferedReader(new InputStreamReader(System.in))
+ */
+import java.io.*;
+
+class abc {
+    public static void main(String[] args) throws IOException
+    // ye "throws IOException" likhna must hai jaha readline function call ho rha ho
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Your Name");
+        String s = br.readLine();
+        System.out.println("Your Name is " + s);
+    }
+}

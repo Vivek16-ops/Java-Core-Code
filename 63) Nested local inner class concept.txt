@@ -1,0 +1,15 @@
+
+package com.mycompany.nextstepprogrmming;
+
+//Creation of local class 
+public class Nested5 {
+    
+    static int a = 99;
+    public static void main(String[] args) {
+        class X{
+            int j = a;
+        }
+        X ob = new X();
+        System.out.println("a= "+ob.j);
+    }
+}

@@ -1,0 +1,12 @@
+package com.mycompany.nextstepprogrmming;
+
+public class String5 {
+
+    public static void main(String[] args) {
+        byte b[] = {65,66,67,68,69,70};//This is the ascy value of AbCD
+        String ob1 = new String(b);//Converted byte into String 
+        System.out.println(ob1);
+        String ob2 =new String(b,4,2);//It start from 4th position and take upto 2 value 
+        System.out.println(ob2);
+    }
+}
